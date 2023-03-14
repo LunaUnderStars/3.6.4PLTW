@@ -89,6 +89,21 @@ public class StandardArrayAlgorithms
         String names = players[i].getName() + " and " + players[i+1].getName();
         System.out.println(names);
     }
+    
+    //moves f to front of array
+    String[] arr = {"A", "B", "C", "D", "E", "F"};
+    for (int i = arr.length; i > 1; i--) {
+        String tmp = arr[i-1];
+        arr[i-2] = arr[i-1];
+        arr[i-1] = tmp;
+    }
+    //reverses the elements in the array
+    String[] arr2 = {"A", "B", "C", "D", "E", "F"};
+    for (int i = 0; i < arr2.length/2; i++) {
+        String tmp = arr[i];
+        arr[i] = arr[arr2.length-i-1];
+        arr[arr2.length-i-1] = tmp;
+    }
 
 
   }
