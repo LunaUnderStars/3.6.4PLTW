@@ -1,6 +1,9 @@
+import java.util.Arrays;
+
 public class Runner {
     public static void main(String[] args) {
-        RandomPermutation.next(10);
+        int[] RandomArray = RandomPermutation.next(20);
+        System.out.println(Arrays.toString(RandomArray));
     }
     
 }
