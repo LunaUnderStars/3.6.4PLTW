@@ -69,7 +69,6 @@ public class StandardArrayAlgorithms
     boolean allHaveValue = true;
     p = 0;
     while ((allHaveValue == true) && (p < players.length)) {
-        System.out.println(p);
         if (players[p].getAge() >= 21) {
             allHaveValue = false;
         }
